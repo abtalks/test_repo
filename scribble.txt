@@ -61,3 +61,13 @@ Case2: If we added the changes using git add then..
 
 git restore --staged <file_path> #To unstage
 git restore <file_path> #To discard changes in the working directory
+
+git diff --cached
+
+Case3: Added changes to staging area (didn't commit) after this added more changes to file
+//To get the staged changes
+git restore --worktree index.html
+
+Case4: How about if we did commit wrong files also
+git reset --soft HEAD^ (uncommit and keep the changes)
+git reset --hard HEAD^ (uncommit and discard the changes)
