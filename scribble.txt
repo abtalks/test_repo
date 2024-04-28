@@ -1,0 +1,30 @@
+#Git
+
+Git is a distributed version control system (vcs)
+
+Git is a tool that helps multiple people work on the same code project or documents by tarcking & 
+managing changes to the file.
+
+Backup & Restore
+Collaboration
+Branching & Merging
+Tracking Changes
+
+Configure Git with Username & Email
+
+git config --global user.name "name"
+git config --global user.email "name@email.com"
+
+git config --list
+
+#
+
+git init
+
+git status
+
+git add index.html #if specific file needs to be added
+
+git add * #if multile file's needs to be added
+
+_> Now the files are present the in staging area
