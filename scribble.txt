@@ -23,7 +23,7 @@ git status
 
 git add index.html #if specific file needs to be added
 
-git add * #if multile file's needs to be added
+git add * #if all the file's needs to be added
 
 _> Now the files are present the in staging area
 
@@ -41,3 +41,11 @@ creating a permanent record in the repository's history.
 git log
 
 git diff
+
+git show "Copy the required ID from git log command:file_path"
+
+git checkout "Copy the required ID from git log command" -- index.html #if specific file is required
+
+git checkout "Copy the required ID from git log command" -- * #if all the file's are required
+
+git checkout master -- index.html #to get back to the latest version of the file
