@@ -17,8 +17,6 @@ git config --global user.email "name@email.com"
 
 git config --list
 
-#
-
 git init
 
 git status
@@ -28,3 +26,18 @@ git add index.html #if specific file needs to be added
 git add * #if multile file's needs to be added
 
 _> Now the files are present the in staging area
+
+git commit -m "Message"
+
+git branch
+
+_> Until specified we would be working in the main branch
+
+#Git commit
+
+A git commit is a command in git that captures a snapshot of the project's currently staged changes,
+creating a permanent record in the repository's history.
+
+git log
+
+git diff
