@@ -71,3 +71,43 @@ git restore --worktree index.html
 Case4: How about if we did commit wrong files also
 git reset --soft HEAD^ (uncommit and keep the changes)
 git reset --hard HEAD^ (uncommit and discard the changes)
+
+#git log
+Useful log options
+
+git log -p -2  (last two commit with diff)
+git log --stat (summary of changes)
+
+git log --pretty=oneline
+git log --pretty=format:"%h-%an,%ar:%s"
+
+git log -S function_name
+
+git log --grep="fix bug" (search commit message)
+
+git log --since="2024-01-01"
+git log --until="2024-01-01"
+
+git log --author="Tom"
+git log --no-merges
+
+### ### ### ###
+
+Remote repository
+
+A remote repository refers to a version of your project that resides on a network server or a 
+hosted repository on the internet.
+
+…or create a new repository on the command line
+echo "# test_repo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:abtalks/test_repo.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin git@github.com:abtalks/test_repo.git
+git branch -M main
+git push -u origin main
