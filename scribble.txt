@@ -116,3 +116,15 @@ git push -u origin main
 
 git remote
 git remote -v
+
+git pull
+
+### Quick Summary Git Commands ###
+
+git status  #to check for any change in the repository
+git diff    #to see the diff of current ver with last commited ver
+git pull    #to fetch the latest files from remote repository
+git add     #to add the modified files in staging area
+git commit  #to add the changes in git repository
+git push    #to puch the commited changes in remote repository
+git log     #to see the old commits history
