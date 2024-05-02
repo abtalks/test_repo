@@ -139,3 +139,23 @@ git checkout <name>
 
 git checkout main
 git merge <name>
+
+git clean
+
+#Git Tagging
+
+To create annotated tags
+git tag -a v1.0 -m "My version 1.0"
+
+To show tags data
+git show v1.0
+
+To tag old commit in case you forgot
+git tag -a v1.2 <commit_no>
+
+To delete a tag
+git tag -d <tag_no>
+
+Tags created remain local, to move it to remote:
+git push orgin v5.3
+git push origin --tags (For all tags together)
